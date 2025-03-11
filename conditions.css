@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+    background: #0f1a25;
+}
+
+/* Hero Section url('services-bg.jpg') no-repeat center center/cover;*/
+.hero-services {
+    text-align: center;
+    background:  #0f1a25;
+    color: white;
+    padding: 60px 20px;
+}
+
+/* Company Introduction */
+.company-intro {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.cta-btn:hover {
+    background: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+a {
+    display: block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  a:hover {
+      background: #2980b9;
+  }
